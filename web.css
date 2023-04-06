@@ -1,0 +1,229 @@
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Patua+One&display=swap');
+*{
+    margin: 0;
+}
+body{
+    position: relative;
+    text-align: center;
+    /* background: linear-gradient(90deg,white,rgb(184, 228, 134)); */
+    background-image: url(https://www.funbrain.com/assets/img/content-cards/games%2Fguess_the_number.png);
+    background-size: 1350px;
+    background-repeat: no-repeat;
+}
+.keyboardnumber i:not(:nth-child(6)){
+    margin-left: -3px;
+   padding: 10px 15px;
+   margin-top: 7px;
+    /* height: 20px; */
+    background-color: rgba(19, 31, 11, 0.856);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+}
+.keyboardnumber i:nth-child(1){
+    margin-left: -4px;
+}
+
+.keyboardnumber i:nth-child(13){
+    background-color: white;
+    color: chartreuse;
+    font-size: 20px;
+}
+
+.keyboardnumber i:nth-child(6){
+    width: 30px;
+    padding: 7px 3px;
+    background-color: white;
+    color: chartreuse;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.keyboardnumber i{
+    transition: box-shadow 0,5s ease;
+}
+.keyboardnumber i:hover{
+    box-shadow: 0 0 10px greenyellow;
+}
+.keyboardnumber i:nth-child(6){
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.appear{
+    height: 50px;
+    font-size: 20px;
+}
+.number{
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgba(7, 12, 7, 0.849);
+    margin-left: 20px;
+    font-weight: 900;
+}
+.keyboard{
+    text-align: center;
+}
+
+.appear{
+    margin-right: 60px;
+}
+
+.answer{
+    text-align: center;
+}
+.menu{
+    height: 33px;
+}
+.menu .title{
+    display: inline-block;
+    background-color: rgba(0, 128, 0, 0.733);
+    color: black;
+    line-height: 25px;
+    font-family: 'Patua One', cursive;
+    font-size: 14px;
+
+}
+.menu .title:nth-child(1){
+    width: 200px;
+    height: 30px;
+}
+.menu .title:nth-child(2){
+    width: 80px;
+    height: 30px;
+}
+.menu .title:nth-child(3){
+    height: 30px;
+    width: 88px;
+}
+
+.answern .result{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background-color: rgba(0, 128, 0, 0.212); 
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 900;
+}
+.answern .checkcorrect{
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    background-color: rgba(0, 128, 0, 0.212);
+   border: 1px solid black;
+   font-size: 20px;
+   font-family: 'Chakra Petch', sans-serif;
+   font-weight: 900;
+}
+.answern .checkpositioncorrect{
+    display: inline-block;
+    height: 30px;
+    width: 88px;
+    background-color: rgba(0, 128, 0, 0.212);
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 900;
+}
+
+.answern{
+    height: 33px;
+}
+.notification1{
+    position: absolute; 
+     display: none;
+    width: 300px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: rgba(70, 194, 194, 0.582);
+    text-align: center;
+    line-height: 100px;
+    border-radius:20px;
+    top: 20%;
+    left: 39%;
+}
+.notification2{
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(218, 46, 46, 0.582);
+    text-align: center;
+    line-height: 100px;
+    border-radius:20px;
+    overflow-y: auto;
+    top: 20%;
+    left: 39%;
+}
+.notification1 p{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
+}
+.notification2 p{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
+}
+.bt{
+   width: 100px;
+   height: 50px;
+   border-radius: 15px;
+   border-color: green;
+   margin-top: 100px;
+}
+.bt:hover{
+    box-shadow: 0 0 10px red;
+    background-color: rgba(255, 255, 0, 0.459);
+}
+
+.bt1{
+    width: 80px;
+   height: 30px;    
+   border-radius: 15px;
+   border-color: rgb(61, 129, 61);
+   margin-top: 20px;
+}
+.bt1:hover{
+    box-shadow: 0 0 10px red;
+    background-color: rgba(201, 35, 35, 0.788);
+}
+
+.rl{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 255, 255, 0.911);
+    border-radius: 20px;
+    display: none;
+    left: 25%;
+    top: 30px;
+}
+.rule{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.692);
+}
+
+.back{
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.back:hover{
+    box-shadow: 0 0 10px rgb(126, 180, 45);
+}
+.bt2{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    transition: background-color 1s ease ;
+}
+.bt2:hover{
+    box-shadow: 0 0 10px rgba(47, 47, 202, 0.712);
+    background-color: rgb(123, 133, 138);
+}
