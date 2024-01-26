@@ -5,9 +5,8 @@
 body{
     position: relative;
     text-align: center;
-    /* background: linear-gradient(90deg,white,rgb(184, 228, 134)); */
     background-image: url(https://www.funbrain.com/assets/img/content-cards/games%2Fguess_the_number.png);
-    background-size: 1350px;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .keyboardnumber i:not(:nth-child(6)){
@@ -87,7 +86,7 @@ body{
 
 }
 .menu .title:nth-child(1){
-    width: 200px;
+    width: 30%;
     height: 30px;
 }
 .menu .title:nth-child(2){
@@ -101,7 +100,7 @@ body{
 
 .answern .result{
     display: inline-block;
-    width: 200px;
+    width: 30%;
     height: 30px;
     background-color: rgba(0, 128, 0, 0.212); 
     border: 1px solid black;

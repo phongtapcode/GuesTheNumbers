@@ -34,7 +34,6 @@ while(ok1===0){
 console.log(rd);
 }
 rdom();
-
 //xu li su kien click tung so
 for(var i=0; i<button.length; i++){
     button[i].addEventListener('click', (function(j){
@@ -50,7 +49,6 @@ function result1(a){
     index++;
     }
 }
-
 //xu li su kien xoa 1 phan tu
 deleteenter[0].addEventListener('click',function(){
     if(index>0){
@@ -58,7 +56,6 @@ deleteenter[0].addEventListener('click',function(){
     number[index].textContent = '';
     }
 })
-
 //xu li su kien enter kq
 let cnt=0;
 deleteenter[1].addEventListener('click',function(){
@@ -111,10 +108,7 @@ deleteenter[1].addEventListener('click',function(){
 }
 
 })
-
-
 //xu li phan again
-
 for(let i=0; i<=1; i++){
     bt[i].addEventListener('click', (function(j){
         return function() {
